@@ -15,8 +15,6 @@ results = os.path.join(cwd, "results")
 data_results = os.path.join(cwd, "data-results")
 metadata_path = os.path.join(cwd, "metadata")
 
-# This function is specific for the RIT Catalog, but my hope is to generalize it for other databases of 
-# simulations in the near future.
 def parse_catalog(link):
     if link.startswith(('https://')):
         response = requests.get(link)
